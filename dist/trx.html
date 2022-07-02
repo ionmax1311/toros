@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Toros" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap"
+	rel="stylesheet"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+	integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+	integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css"
+	integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<!-- <link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+/> -->
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+/>
+<link rel="shortcut icon" href="./img/logo.png" />
+
+		<link rel="stylesheet" href="./index.css" />
+		<title>TRX петлі</title>
+	</head>
+
+	<body>
+		<!-- 
+<div class="preloader">
+	<div class="preloader__content">
+		<img src="./img/logo.png" alt="" />
+	</div>
+</div> -->
+
+<!-- preloader -->
+
+<div class="loader__wrap">
+	<span class="loader"></span>
+</div>
+
+<div class="btn-burger">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+<div class="popup-nav">
+	<nav class="header__nav-mob">
+		<div class="close-nav-mob">
+			<i class="fa-solid fa-circle-xmark"></i>
+		</div>
+		<ul>
+			<li class="nav-item">
+				<a href="index.html">Головна</a>
+			</li>
+			<li class="nav-item nav-dropdown">
+				<a class="nav-dropdown-link" href="javascript:void(0)"
+					>Послуги</a
+				>
+				<i class="fa-solid fa-angle-down"></i>
+				<ul class="header__nav-dropdown">
+					<li>
+						<a href="boxing.html">Бокс</a>
+					</li>
+					<li>
+						<a href="kickboxing.html">Кікбоксинг</a>
+					</li>
+					<li>
+						<a href="trx.html">TRX петлі</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="news.html">Новини</a>
+			</li>
+			<li class="nav-item">
+				<a href="shop.html">Товари</a>
+			</li>
+
+			<li>
+				<a href="about.html">Про нас</a>
+			</li>
+			<li>
+				<a href="media.html">Медіа</a>
+			</li>
+			<li>
+				<a href="contacts.html">Контакти</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<div class="popup-shop">
+	<div class="popup-shop__content">
+		<div class="close-popup-shop">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+		<div class="popup-shop__order-wrap">
+			<div>
+				<span id="order-title"></span>
+				<span id="order-price"></span>
+			</div>
+
+			<div>
+				<img id="order-img" src="" alt="" />
+			</div>
+		</div>
+
+		<form class="form">
+			<div class="form-item">
+				<input type="text" id="nameOrder" autocomplete="off" required />
+				<label for="nameOrder">Ваше ім'я</label>
+			</div>
+
+			<div class="form-item">
+				<input type="tel" id="phoneOrder" autocomplete="off" required />
+				<label for="phoneOrder">Ваш телефон</label>
+			</div>
+
+			<button type="button" class="btn btn-order-send">Замовити</button>
+		</form>
+	</div>
+</div>
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<ul class="header__top-list">
+				<li>
+					<a href="mailto:vfilonenko0215@gmail.com">
+						<div class="header__top-icon">
+							<img src="./img/mail-icon.svg" alt="" />
+						</div>
+						<span>vfilonenko0215@gmail.com</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://goo.gl/maps/24WxEog1cWcjPeKv9"
+						target="_blank"
+					>
+						<div class="header__top-icon">
+							<img src="./img/location-icon.svg" alt="" />
+						</div>
+						<span>Вул. Милославська, 33а</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+380674098717">
+						<div class="header__top-icon">
+							<img src="./img/phone-icon.svg" alt="" />
+						</div>
+						<span>+380 67 4098717</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header__nav">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html"><img src="../img/logo.png" alt="" /></a>
+			</div>
+			<nav class="header__nav-desc">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="index.html">Головна</a>
+					</li>
+					<li class="nav-item nav-hover">
+						<a href="javascript:void(0)">Послуги</a>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="boxing.html">Бокс</a>
+							</li>
+							<li>
+								<a href="kickboxing.html">Кікбоксинг</a>
+							</li>
+							<li>
+								<a href="trx.html">TRX петлі</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="news.html">Новини</a>
+					</li>
+					<li class="nav-item">
+						<a href="shop.html">Товари</a>
+					</li>
+
+					<li class="more-nav nav-hover">
+						<span class="more-icon">...</span>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="about.html">Про нас</a>
+							</li>
+							<li>
+								<a href="media.html">Медіа</a>
+							</li>
+							<li>
+								<a href="contacts.html">Контакти</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__social">
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<section class="about kickboxing">
+			<div class="container">
+				<h2 class="title-section">TRX петлі</h2>
+				<div class="about__wrap">
+					<div class="about__item">
+						<div class="about__text-wrap">
+							<p>
+								Унікальний вид програми тренувань, де Ви
+								працюєте тільки зі
+								<span class="font-bold">своєю вагою</span>.
+								Регулювання ременів (петлей) дозволить Вам
+								займатися з різними рівнями навантаження.
+							</p>
+							<p>
+								Висока ефективність будь-яких
+								<span class="font-bold">типів тренувань</span> :
+								кардіо і силових, групових та індивідуальних, на
+								м'язи-стабілізатори і розтягування,
+								спеціалізованих для різноманітних видів спорту і
+								т. д.
+							</p>
+						</div>
+
+						<div class="about__img-fix">
+							<img src="./img/trx-1.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<p class="font-bold">
+					Ви обов'язково повинні спробувати такий вид тренінгу! І ми
+					надаємо Вам таку можливість!
+				</p>
+
+				<p>
+					Існує багато видів тренувань з петлями TRX. З деякими з них
+					Ви зможете ознайомитися на наших тренуваннях:
+				</p>
+				<ul class="list">
+					<li>
+						<span class="font-bold">TRX Start</span> — з цього виду
+						тренування варто почати знайомство з петлями TRX. В ході
+						заняття ви познайомитеся з базовими вправами на TRX і
+						навчитесь їх контролювати. Збалансоване поєднання
+						силових і кардіо вправ не залишить без уваги ні одну
+						ділянку вашого тіла. Рекомендована для новачків в
+						спорті, а також для відновлення після травм;
+					</li>
+					<li>
+						<span class="font-bold">TRX Basic</span> — силова робота
+						з власною вагою на петлях TRX*. Тренування напрямлене на
+						розвиток різних груп м'язів, яке підходить як для
+						новачків, так і для просунутих;
+					</li>
+					<li>
+						<span class="font-bold">TRX Upper</span> — акцент на
+						верхню частину тіла.;
+					</li>
+					<li>
+						<span class="font-bold">TRX Abs</span> — акцент на кор і
+						прес;
+					</li>
+					<li>
+						<span class="font-bold">TRX Legs</span> — акцент на
+						ноги;
+					</li>
+					<li>
+						<span class="font-bold">TRX Fit</span> — поєднання
+						силових вправ на петлях і кардіо вправ з власною вагою;
+					</li>
+					<li>
+						<span class="font-bold">Кругове тренування</span> — мікс
+						з декількох вправ з різними видами тренажерів і вправ
+						(вагові м'ячі, TRX, спортивні канати, гантелі, штанга,
+						кординаційна драбина), які опрацьовують все тіло. Вправи
+						постійно змінюються через деякий період часу;
+					</li>
+					<li>
+						<span class="font-bold">Попа-клас</span> — унікальне
+						супер-тренування для дівчат, які хочуть мати гарну
+						сідницю;
+					</li>
+				</ul>
+				<div class="block">
+					<div class="block-img">
+						<img src="./img/trx-2.jpg" alt="" />
+					</div>
+					<div>
+						<p>
+							<span class="font-bold">TRX</span> - це сучасний вид
+							підвісного тренінгу.
+						</p>
+						<p>
+							<span class="font-bold">TRX</span>- це заміна
+							тренажерного залу в одному універсальному пристрої.
+						</p>
+					</div>
+				</div>
+				<div class="line"></div>
+
+				<p class="font-bold shedule-title">Розклад заннять з TRX:</p>
+				<div class="table">
+					<table
+						align="center"
+						border="1"
+						cellpadding="1"
+						cellspacing="1"
+						style="height: 50px; width: 360px"
+					>
+						<tbody>
+							<tr>
+								<td>
+									<span style="font-size: 11pt"
+										><span style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										><strong>ПН - ПТ</strong></span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span style="display: none"
+											>&nbsp;</span
+										><span
+											id="cke_bm_14577S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										><strong>СБ</strong></span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14577E"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14576S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>10:00 - 10:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14576E"
+											style="display: none"
+											>&nbsp;</span
+										><span
+											id="cke_bm_14575S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>10:00 - 10:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14575E"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14574S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>11:00 - 11:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14574E"
+											style="display: none"
+											>&nbsp;</span
+										><span
+											id="cke_bm_14573S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>11:00 - 11:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14573E"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14572S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>19:00 - 19:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14572E"
+											style="display: none"
+											>&nbsp;</span
+										><span
+											id="cke_bm_14571S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt">-</span>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14571E"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14570S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt"
+										>20:00 - 20:45</span
+									>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14570E"
+											style="display: none"
+											>&nbsp;</span
+										><span
+											id="cke_bm_14569S"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+								<td style="text-align: center">
+									<span style="font-size: 11pt">-</span>
+								</td>
+								<td>
+									<span style="font-size: 11pt"
+										><span
+											id="cke_bm_14569E"
+											style="display: none"
+											>&nbsp;</span
+										>&nbsp;</span
+									>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<span class="shedule-desc"
+					>*час від часу розклад може змінюватися, тому слідкуйте за
+					нашою сторінкою в
+					<a
+						class="link"
+						href="https://instagram.com/toros_club98?utm_source=ig_profile_share&igshid=bdakpj2bge7z"
+						>Instagram</a
+					></span
+				>
+				<p class="font-bold">
+					Для Вас у нас є перше пробне заняття, абонементи на місяць
+					та одноразова оплата за тренування.
+				</p>
+				<p>За додатковою інформацією по телефону:</p>
+				<ul>
+					<li class="mb10 font-bold">
+						<a class="link" href="tel:+380671786827"
+							>+380671786827</a
+						>- Інна
+					</li>
+				</ul>
+				<p>або надсилайте нам повідомлення:</p>
+				<ul>
+					<li class="mb10 font-bold">
+						<a class="link" href="mailto:vfilonenko0215@gmail.com"
+							>vfilonenko0215@gmail.com</a
+						>
+					</li>
+					<li>
+						aбо в <span class="font-bold">Instagram</span>
+						<a
+							class="link"
+							href="https://instagram.com/toros_club98?utm_source=ig_profile_share&igshid=bdakpj2bge7z"
+							>@toros_club98</a
+						>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<footer class="footer">
+	<div class="container">
+		<ul class="footer__list">
+			<li>
+				<span class="footer__list-title">EMAIL:</span>
+				<a href="mailto:vfilonenko0215@gmail.com">
+					<span>vfilonenko0215@gmail.com</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">АДРЕСА:</span>
+				<a href="https://goo.gl/maps/24WxEog1cWcjPeKv9" target="_blank">
+					<span>Вул. Милославська, 33а</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">ТЕЛЕФОН:</span>
+				<a href="tel:+380674098717">
+					<span>+380 67 4098717</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="footer__social">
+			<li>
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&amp;igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer__copy">
+		<div class="footer__logo">
+			<img src="img/logo.png" alt="" />
+			<span>Спортивный клуб Торос</span>
+		</div>
+		<span class="footer__copy-text"
+			>Copyright © 2018 - <span id="year"></span
+		></span>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="index.js"></script>
+
+	</body>
+</html>

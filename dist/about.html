@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Toros" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap"
+	rel="stylesheet"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+	integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+	integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css"
+	integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<!-- <link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+/> -->
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+/>
+<link rel="shortcut icon" href="./img/logo.png" />
+
+		<link rel="stylesheet" href="./index.css" />
+		<title>Про нас</title>
+	</head>
+
+	<body>
+		<!-- 
+<div class="preloader">
+	<div class="preloader__content">
+		<img src="./img/logo.png" alt="" />
+	</div>
+</div> -->
+
+<!-- preloader -->
+
+<div class="loader__wrap">
+	<span class="loader"></span>
+</div>
+
+<div class="btn-burger">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+<div class="popup-nav">
+	<nav class="header__nav-mob">
+		<div class="close-nav-mob">
+			<i class="fa-solid fa-circle-xmark"></i>
+		</div>
+		<ul>
+			<li class="nav-item">
+				<a href="index.html">Головна</a>
+			</li>
+			<li class="nav-item nav-dropdown">
+				<a class="nav-dropdown-link" href="javascript:void(0)"
+					>Послуги</a
+				>
+				<i class="fa-solid fa-angle-down"></i>
+				<ul class="header__nav-dropdown">
+					<li>
+						<a href="boxing.html">Бокс</a>
+					</li>
+					<li>
+						<a href="kickboxing.html">Кікбоксинг</a>
+					</li>
+					<li>
+						<a href="trx.html">TRX петлі</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="news.html">Новини</a>
+			</li>
+			<li class="nav-item">
+				<a href="shop.html">Товари</a>
+			</li>
+
+			<li>
+				<a href="about.html">Про нас</a>
+			</li>
+			<li>
+				<a href="media.html">Медіа</a>
+			</li>
+			<li>
+				<a href="contacts.html">Контакти</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<div class="popup-shop">
+	<div class="popup-shop__content">
+		<div class="close-popup-shop">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+		<div class="popup-shop__order-wrap">
+			<div>
+				<span id="order-title"></span>
+				<span id="order-price"></span>
+			</div>
+
+			<div>
+				<img id="order-img" src="" alt="" />
+			</div>
+		</div>
+
+		<form class="form">
+			<div class="form-item">
+				<input type="text" id="nameOrder" autocomplete="off" required />
+				<label for="nameOrder">Ваше ім'я</label>
+			</div>
+
+			<div class="form-item">
+				<input type="tel" id="phoneOrder" autocomplete="off" required />
+				<label for="phoneOrder">Ваш телефон</label>
+			</div>
+
+			<button type="button" class="btn btn-order-send">Замовити</button>
+		</form>
+	</div>
+</div>
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<ul class="header__top-list">
+				<li>
+					<a href="mailto:vfilonenko0215@gmail.com">
+						<div class="header__top-icon">
+							<img src="./img/mail-icon.svg" alt="" />
+						</div>
+						<span>vfilonenko0215@gmail.com</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://goo.gl/maps/24WxEog1cWcjPeKv9"
+						target="_blank"
+					>
+						<div class="header__top-icon">
+							<img src="./img/location-icon.svg" alt="" />
+						</div>
+						<span>Вул. Милославська, 33а</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+380674098717">
+						<div class="header__top-icon">
+							<img src="./img/phone-icon.svg" alt="" />
+						</div>
+						<span>+380 67 4098717</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header__nav">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html"><img src="../img/logo.png" alt="" /></a>
+			</div>
+			<nav class="header__nav-desc">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="index.html">Головна</a>
+					</li>
+					<li class="nav-item nav-hover">
+						<a href="javascript:void(0)">Послуги</a>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="boxing.html">Бокс</a>
+							</li>
+							<li>
+								<a href="kickboxing.html">Кікбоксинг</a>
+							</li>
+							<li>
+								<a href="trx.html">TRX петлі</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="news.html">Новини</a>
+					</li>
+					<li class="nav-item">
+						<a href="shop.html">Товари</a>
+					</li>
+
+					<li class="more-nav nav-hover">
+						<span class="more-icon">...</span>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="about.html">Про нас</a>
+							</li>
+							<li>
+								<a href="media.html">Медіа</a>
+							</li>
+							<li>
+								<a href="contacts.html">Контакти</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__social">
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<section class="about">
+			<div class="container">
+				<h2 class="title-section">Про нас</h2>
+				<div class="about__wrap">
+					<div class="about__item">
+						<div class="about__text-wrap">
+							<span class="about__title font-bold desc">
+								Олександр Філоненко - триразовий чемпіон світу з
+								кікбоксингу та директор СК "Торос".
+							</span>
+							<p class="about__text">
+								Олександр Філоненко (1975 р.н.) потрапив до
+								боксерського залу випадково і майже запізно –
+								1990 року товариш привів Олександра до
+								спортивного клубу «Гонг» на Троєщині (нині
+								знаходится по вул. Оноре де Бальзака). Проте
+								зустріч з тренером Василем Ковальчуком, у
+								минулому чемпіоном Європи та Панамериканських
+								ігор, виявилася справжнім подарунком долі.
+							</p>
+						</div>
+
+						<div class="about__img-fix">
+							<img src="./img/coach-1.jpg" alt="" />
+						</div>
+						<span class="about__title font-bold mob">
+							Олександр Філоненко - триразовий чемпіон світу з
+							кікбоксингу та директор СК "Торос".
+						</span>
+					</div>
+					<div class="about__item">
+						<div class="about__img-fix">
+							<img src="./img/about-1.png" alt="" />
+						</div>
+						<div class="about__text-wrap">
+							<p class="about__text">
+								Тоді Олександр ще вчився в СПТУ №12 (нині ДНЗ
+								«ЦПОТД м. Києва»). Підробляв, працюючи
+								охоронцем. Першим великим успіхом стала перемога
+								у Чемпіонаті Європи 1997 року. У 1997 і 1998
+								роках - золоті медалі на відкритому чемпіонаті
+								Німеччини.
+							</p>
+							<p class="about__text">
+								Згодом Олександр разом з усім колективом,
+								тренерами Василем Ковальчуком та Віктором
+								Горбанем, переходить до іншого троєщинського
+								клубу «Торос», який відкрився у 1998 році у
+								Ватутінському районі. Вони самотужки
+								переобладнали кімнати в новому приміщенні на
+								сучасний боксерський зал, що відповідав всім
+								стандартам. Після переходу Олександр продовжував
+								своє тренування у новому залі.
+							</p>
+							<p class="about__text">
+								Він виступав головним чином за Всеєвразійську
+								федерацію кікбоксингу України, яку очолював на
+								той час Павло Орел, і яка значною мірою
+								спиралася на "Торос". Проте фінансування
+								відряджень спортсменів на змагання відбувалося
+								також за кошти громадської організації "СК
+								"Торос".
+							</p>
+						</div>
+					</div>
+					<div class="about__item">
+						<div class="about__img-fix">
+							<img src="./img/about-2.jpg" alt="" />
+						</div>
+						<div class="about__img-fix">
+							<img src="./img/about-3.png" alt="" />
+						</div>
+					</div>
+					<p>
+						Найбільш успішним для спортивної діяльності виявився
+						1999 рік – Олександр став чемпіоном Києва, України,
+						літніх спортивних ігор і двох чемпіонатів світу – в
+						Австралії (ISKA) та Італії (WAKO). А також у 2001 році в
+						Австрії на Чемпіонаті світу (WKA) він зайняв перше та
+						друге місця у лайт і фул контакті відповідно.
+					</p>
+
+					<div class="about__item">
+						<div class="about__text-wrap">
+							<p class="about__text">
+								<span class="font-bold"
+									>Олександр Філоненко</span
+								>
+								став першим в Україні, хто виграв Чемпіонат
+								світу у лайт контакті. Зараз він триразовий
+								чемпіон світу з кікбоксингу та заслужений
+								майстер спорту України, директор
+								<span class="font-bold"
+									>спортивного клубу "Торос"</span
+								>.
+							</p>
+						</div>
+						<div class="about__img-fix">
+							<img src="./img/about-5.jpg" alt="" />
+						</div>
+					</div>
+					<p>
+						З початку існування до "Торосу" із захопленням ходили і
+						тренувалися діти та дорослі. Перший ремонт, який був
+						зробленний у 1998 році, прослужив усім
+						<span class="font-bold">20 років</span>! І у 2018 році
+						троєщинська організація "Спорт для всіх" виділила гроші
+						на грандіозний ремонт усього приміщення клубу.
+					</p>
+					<p>
+						<span class="font-bold">"Торос"</span> було зачинено на
+						ремонт 1 червня 2018 року. Усі 6 місяців кожен слідкував
+						за цим процесом на наших сторінках у соц. мережах. Кожен
+						з нетерпінням чекав на відкриття нового спортивного
+						залу.
+					</p>
+					<p>
+						І, нарешті, довгоочікуванне відкриття клубу відбулося 22
+						грудня 2018 року на зимовому турнірі Деснянського району
+						"Перша рукавичка", який проходить у нашому клубі вже 13
+						років поспіль. Ми були раді бачити кожного і вдячні усім
+						за те, що завітали до нас у цей чудовий день.
+					</p>
+					<p>
+						Ми дуже сподіваємося, що цей ремонт прослужить нам дуже
+						довго, як і перший, і "Торос", і наш колектив буде
+						зустрічати Вас ще багато років!
+					</p>
+					<p class="font-bold">
+						Спортивний клуб "Торос" чекає на Вас!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+	<div class="container">
+		<ul class="footer__list">
+			<li>
+				<span class="footer__list-title">EMAIL:</span>
+				<a href="mailto:vfilonenko0215@gmail.com">
+					<span>vfilonenko0215@gmail.com</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">АДРЕСА:</span>
+				<a href="https://goo.gl/maps/24WxEog1cWcjPeKv9" target="_blank">
+					<span>Вул. Милославська, 33а</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">ТЕЛЕФОН:</span>
+				<a href="tel:+380674098717">
+					<span>+380 67 4098717</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="footer__social">
+			<li>
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&amp;igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer__copy">
+		<div class="footer__logo">
+			<img src="img/logo.png" alt="" />
+			<span>Спортивный клуб Торос</span>
+		</div>
+		<span class="footer__copy-text"
+			>Copyright © 2018 - <span id="year"></span
+		></span>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="index.js"></script>
+
+	</body>
+</html>

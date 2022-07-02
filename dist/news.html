@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Toros" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap"
+	rel="stylesheet"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+	integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+	integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css"
+	integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<!-- <link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+/> -->
+<link
+	rel="stylesheet"
+	type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+/>
+<link rel="shortcut icon" href="./img/logo.png" />
+
+		<link rel="stylesheet" href="./index.css" />
+		<title>Новини</title>
+	</head>
+
+	<body>
+		<!-- 
+<div class="preloader">
+	<div class="preloader__content">
+		<img src="./img/logo.png" alt="" />
+	</div>
+</div> -->
+
+<!-- preloader -->
+
+<div class="loader__wrap">
+	<span class="loader"></span>
+</div>
+
+<div class="btn-burger">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+<div class="popup-nav">
+	<nav class="header__nav-mob">
+		<div class="close-nav-mob">
+			<i class="fa-solid fa-circle-xmark"></i>
+		</div>
+		<ul>
+			<li class="nav-item">
+				<a href="index.html">Головна</a>
+			</li>
+			<li class="nav-item nav-dropdown">
+				<a class="nav-dropdown-link" href="javascript:void(0)"
+					>Послуги</a
+				>
+				<i class="fa-solid fa-angle-down"></i>
+				<ul class="header__nav-dropdown">
+					<li>
+						<a href="boxing.html">Бокс</a>
+					</li>
+					<li>
+						<a href="kickboxing.html">Кікбоксинг</a>
+					</li>
+					<li>
+						<a href="trx.html">TRX петлі</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="news.html">Новини</a>
+			</li>
+			<li class="nav-item">
+				<a href="shop.html">Товари</a>
+			</li>
+
+			<li>
+				<a href="about.html">Про нас</a>
+			</li>
+			<li>
+				<a href="media.html">Медіа</a>
+			</li>
+			<li>
+				<a href="contacts.html">Контакти</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<div class="popup-shop">
+	<div class="popup-shop__content">
+		<div class="close-popup-shop">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+		<div class="popup-shop__order-wrap">
+			<div>
+				<span id="order-title"></span>
+				<span id="order-price"></span>
+			</div>
+
+			<div>
+				<img id="order-img" src="" alt="" />
+			</div>
+		</div>
+
+		<form class="form">
+			<div class="form-item">
+				<input type="text" id="nameOrder" autocomplete="off" required />
+				<label for="nameOrder">Ваше ім'я</label>
+			</div>
+
+			<div class="form-item">
+				<input type="tel" id="phoneOrder" autocomplete="off" required />
+				<label for="phoneOrder">Ваш телефон</label>
+			</div>
+
+			<button type="button" class="btn btn-order-send">Замовити</button>
+		</form>
+	</div>
+</div>
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<ul class="header__top-list">
+				<li>
+					<a href="mailto:vfilonenko0215@gmail.com">
+						<div class="header__top-icon">
+							<img src="./img/mail-icon.svg" alt="" />
+						</div>
+						<span>vfilonenko0215@gmail.com</span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://goo.gl/maps/24WxEog1cWcjPeKv9"
+						target="_blank"
+					>
+						<div class="header__top-icon">
+							<img src="./img/location-icon.svg" alt="" />
+						</div>
+						<span>Вул. Милославська, 33а</span>
+					</a>
+				</li>
+				<li>
+					<a href="tel:+380674098717">
+						<div class="header__top-icon">
+							<img src="./img/phone-icon.svg" alt="" />
+						</div>
+						<span>+380 67 4098717</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header__nav">
+		<div class="container">
+			<div class="header__logo">
+				<a href="index.html"><img src="../img/logo.png" alt="" /></a>
+			</div>
+			<nav class="header__nav-desc">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="index.html">Головна</a>
+					</li>
+					<li class="nav-item nav-hover">
+						<a href="javascript:void(0)">Послуги</a>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="boxing.html">Бокс</a>
+							</li>
+							<li>
+								<a href="kickboxing.html">Кікбоксинг</a>
+							</li>
+							<li>
+								<a href="trx.html">TRX петлі</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="news.html">Новини</a>
+					</li>
+					<li class="nav-item">
+						<a href="shop.html">Товари</a>
+					</li>
+
+					<li class="more-nav nav-hover">
+						<span class="more-icon">...</span>
+						<ul class="header__nav-hover">
+							<li>
+								<a href="about.html">Про нас</a>
+							</li>
+							<li>
+								<a href="media.html">Медіа</a>
+							</li>
+							<li>
+								<a href="contacts.html">Контакти</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__social">
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<section class="about news">
+			<div class="container">
+				<h2 class="title-section">Новини</h2>
+				<ul class="news__list about__wrap">
+					<li class="news__item">
+					
+							<div class="news__item-text">
+							
+									<a class="news__item-title font-bold" href="mi-vidnovlyuemo-robotu-pislya-karantinu-nabir-grup-z-kikboksingu.html">
+										Ми відновлюємо роботу після карантину |
+										НАБІР ГРУП З КІКБОКСИНГУ
+									</a>
+							
+								<div>
+									<span class="news__item-date"
+										>27.08.2020 21:18</span
+									>
+									<span class="news__item-more"></span>
+										<a href="mi-vidnovlyuemo-robotu-pislya-karantinu-nabir-grup-z-kikboksingu.html"  class="link"> читати далі... </a>
+									</span>
+								</div>
+							</div>
+					
+					</li>
+                    <li class="news__item">
+					
+							<div class="news__item-text">
+							
+									<a class="news__item-title font-bold" href="#">
+										Ми відновлюємо роботу після карантину |
+										НАБІР ГРУП З КІКБОКСИНГУ
+									</a>
+								
+								<div>
+									<span class="news__item-date"
+										>27.08.2020 21:18</span
+									>
+									<span class="news__item-more"></span>
+										<a href="#" class="link"> читати далі... </a>
+									</span>
+								</div>
+							</div>
+					
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<footer class="footer">
+	<div class="container">
+		<ul class="footer__list">
+			<li>
+				<span class="footer__list-title">EMAIL:</span>
+				<a href="mailto:vfilonenko0215@gmail.com">
+					<span>vfilonenko0215@gmail.com</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">АДРЕСА:</span>
+				<a href="https://goo.gl/maps/24WxEog1cWcjPeKv9" target="_blank">
+					<span>Вул. Милославська, 33а</span>
+				</a>
+			</li>
+			<li>
+				<span class="footer__list-title">ТЕЛЕФОН:</span>
+				<a href="tel:+380674098717">
+					<span>+380 67 4098717</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="footer__social">
+			<li>
+				<a
+					href="https://www.facebook.com/groups/TOROSclub.98/?ref=bookmarks"
+					><i class="fa-brands fa-facebook-f"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://instagram.com/toros_club98?utm_source=ig_profile_share&amp;igshid=bdakpj2bge7z"
+					><i class="fa-brands fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://www.youtube.com/channel/UCQSBlYVlXDPjuYYZ2m6Rp8g"
+					><i class="fa-brands fa-youtube"></i
+				></a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer__copy">
+		<div class="footer__logo">
+			<img src="img/logo.png" alt="" />
+			<span>Спортивный клуб Торос</span>
+		</div>
+		<span class="footer__copy-text"
+			>Copyright © 2018 - <span id="year"></span
+		></span>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="index.js"></script>
+
+	</body>
+</html>
